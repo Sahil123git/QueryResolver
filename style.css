@@ -1,0 +1,31 @@
+* {
+  background-color: rgb(34, 11, 52);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "spartan", sans-serif;
+}
+
+.navBar {
+  /* background-color: rgb(44, 35, 69);
+  height: 10vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px; /* this is chngd*/
+  background-color: #9098c0;
+  box-shadow: 0 15px 15px rgba(209, 50, 50, 0.06);
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.navBar a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: #acd4ef;
+  background-color: #9098c0;
+  /* transition: 0.3s ease; */
+}
