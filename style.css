@@ -7,12 +7,10 @@
 }
 
 .navBar {
-  /* background-color: rgb(44, 35, 69);
-  height: 10vh; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px; /* this is chngd*/
+  /* justify-content: space-between; */
+  padding: 8px 7px 2px 25px; /* this is chngd*/
   background-color: #9098c0;
   box-shadow: 0 15px 15px rgba(209, 50, 50, 0.06);
   z-index: 1000;
@@ -25,7 +23,29 @@
   text-decoration: none;
   font-size: 30px;
   font-weight: 700;
-  color: #acd4ef;
+  color: #addcfc;
   background-color: #9098c0;
-  /* transition: 0.3s ease; */
+  transition: 0.3s ease;
+}
+
+.navBar input {
+  background-color: antiquewhite;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 45vw;
+  position: relative;
+  left: 14vw;
+  /* margin: 0 5% 0 8%; to move search bar */
+}
+
+.navBar .Profile {
+  /* height: 100px; */
+  position: relative;
+  left: 15vw;
+}
+
+.navBar .Profile img {
+  border: 3px dotted rgb(13, 79, 154);
+  position: relative;
+  left: 19vw;
 }
