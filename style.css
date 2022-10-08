@@ -1,15 +1,18 @@
 * {
-  background-color: rgb(34, 11, 52);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "spartan", sans-serif;
+  color: rgb(236, 139, 222);
+}
+
+body {
+  background-color: rgb(34, 11, 52);
 }
 
 .navBar {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   padding: 8px 7px 2px 25px; /* this is chngd*/
   background-color: #9098c0;
   box-shadow: 0 15px 15px rgba(209, 50, 50, 0.06);
@@ -47,5 +50,63 @@
 .navBar .Profile img {
   border: 3px dotted rgb(13, 79, 154);
   position: relative;
-  left: 19vw;
+  margin-left: 19vw;
+}
+.content {
+  display: flex;
+  /* flex-direction: row; */
+}
+.content .fstcol {
+  border: 2px solid rgb(236, 139, 222);
+  position: fixed;
+  height: 80%;
+  width: 210px;
+  background-color: #b7cadf;
+}
+.upper .active {
+  background-color: #a8b6d2;
+}
+.content hr {
+  border-top: 1px dashed red;
+}
+.content h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(55, 129, 151);
+}
+.fstcol .nav {
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.fstcol .nav a {
+  color: rgb(11, 32, 168);
+  padding: 15px 15px 5px 15px;
+  text-decoration: none;
+}
+.fstcol .nav a:hover {
+  background-color: rgb(210, 220, 229);
+}
+.fstcol .nav .active {
+  background-color: rgb(151, 184, 215);
+}
+.fstcol .lower li {
+  color: rgb(11, 32, 168);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 5px 1px 22px;
+}
+
+.fstcol .lower li::before {
+  display: inline-block;
+  content: "";
+  border-radius: 10px;
+  height: 0.6rem;
+  width: 0.65rem;
+  margin-right: 0.5rem;
+  background-color: rgb(55, 129, 151);
+}
+.content .middlecol {
+  margin-left: 225px;
 }
