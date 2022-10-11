@@ -16,7 +16,7 @@ body {
   padding: 8px 7px 2px 25px; /* this is chngd*/
   background-color: #9098c0;
   box-shadow: 0 15px 15px rgba(209, 50, 50, 0.06);
-  z-index: 1000;
+  z-index: 500;
   position: sticky;
   top: 0;
   left: 0;
@@ -113,14 +113,56 @@ body {
 .content .middlecol p {
   font-size: 25px;
   font-weight: 700;
-  color: rgb(63, 125, 179);
+  color: rgb(50, 109, 160);
 }
+.content .middlecol .createButton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.content .middlecol .createButton .create {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(227, 236, 229);
+  color: rgb(24, 180, 63);
+  padding: 10px;
+}
+.content .middlecol .createButton .create:hover {
+  /* background-color: rgb(68, 174, 84); */
+  color: rgb(222, 238, 222);
+  background-color: rgb(24, 164, 59);
+}
+.content .middlecol .addPopup {
+  /*remove this using Js to show input box*/
+  display: none;
+}
+/* .AddQueryBox .closeButton {
+  display: none;
+} */
+.content .middlecol .popupButton .AddQueryBox {
+  background-color: white;
+}
+.content .middlecol .popupButton {
+  /*this class will be added using js*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 600;
+  background-color: rgba(13, 13, 13, 0.884);
+}
+
 .content .middlecol .query {
   background-color: rgb(163, 174, 193);
   width: 65vw;
   height: 170px;
   border: 3px solid blue;
-  margin: 20px 15px 20px 2px;
+  margin: 10px 15px 20px 2px;
   border-radius: 20px;
 }
 .content .middlecol .query .header {

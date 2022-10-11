@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <div class="navBar">
         <a class="active" href="index.html">QueryResolver</a>
 
@@ -43,7 +44,21 @@
             </ol>
         </div>
         <div class="middlecol">
-            <p>Recent Queries</p>
+            <div class="createButton">
+                <p>Recent Queries</p>
+                <button class="create">Create</button>
+            </div>
+            <div class="addPopup">
+                <div class="AddQueryBox">
+                    <label for="Name">Name : </label><input type="text" name="" id="">
+                    <label for="Name">Registration : </label><input type="text" name="" id=""><br>
+                    <textarea rows="4" cols="50" name="comment" form="usrform"
+                        placeholder="Enter your Description here"></textarea>
+                    <br>
+                    <label for="Name">Tags : </label><input type="text" name="" id="">
+                    <button class="closeButton">X</button>
+                </div>
+            </div>
             <div class="query">
                 <div class="header">
                     <p class="Ques">Name</p>
@@ -72,6 +87,7 @@
 
     <div class="footer">
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
