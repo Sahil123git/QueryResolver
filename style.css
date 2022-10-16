@@ -140,12 +140,29 @@ body {
   /*remove this using Js to show input box*/
   display: none;
 }
-/* .AddQueryBox .closeButton {
-  display: none;
-} */
-.content .middlecol .popupButton .AddQueryBox {
-  background-color: white;
+/* For chngng creating query css */
+.AddQueryBox {
+  margin: 200px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgb(105, 136, 186);
+  color: rgb(229, 255, 0);
 }
+.AddQueryBox label {
+  color: rgb(112, 216, 225);
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.AddQueryBox input,
+.AddQueryBox textarea {
+  padding: 7px;
+  border-radius: 10px;
+  color: rgb(109, 42, 175);
+  font-size: 17px;
+  font-weight: 600;
+}
+
 .content .middlecol .popupButton {
   /*this class will be added using js*/
   position: fixed;
