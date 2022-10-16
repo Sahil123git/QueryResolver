@@ -162,7 +162,12 @@ body {
   font-size: 17px;
   font-weight: 600;
 }
-
+.AddQueryBox .btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+}
 .content .middlecol .popupButton {
   /*this class will be added using js*/
   position: fixed;
