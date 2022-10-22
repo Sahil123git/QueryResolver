@@ -142,11 +142,11 @@ body {
 }
 /* For chngng creating query css */
 .AddQueryBox {
-  margin: 200px;
+  margin: 160px;
   padding: 30px;
   border-radius: 15px;
   background-color: rgb(105, 136, 186);
-  color: rgb(229, 255, 0);
+  /* color: rgb(229, 255, 0); */
 }
 .AddQueryBox label {
   color: rgb(112, 216, 225);
@@ -180,7 +180,7 @@ body {
   transition: 0.5s ease;
 }
 .AddQueryBox .lowerBtn .outerOTP {
-  margin-left: 78%;
+  margin-left: 80%;
   color: rgb(112, 216, 225);
   /* background-color: white; */
 }
@@ -192,8 +192,8 @@ body {
 }
 .AddQueryBox .closeButton {
   position: absolute;
-  right: 210px;
-  top: 208px;
+  right: 171px;
+  top: 170px;
   font-size: 17px;
   font-weight: 600;
   border: 0px;
@@ -224,7 +224,7 @@ body {
   /*now to make popup */
   background-color: rgb(163, 174, 193);
   width: 65vw;
-  height: 170px;
+  height: 185px;
   border: 3px solid blue;
   margin: 10px 15px 20px 2px;
   border-radius: 20px;
@@ -240,6 +240,7 @@ body {
   font-weight: 700;
 }
 .content .middlecol .query .Ans {
+  margin-left: 8px;
   font-size: 20px;
   font-weight: 700;
   color: rgb(142, 88, 192);
@@ -255,11 +256,12 @@ body {
   display: flex;
 }
 .content .middlecol .query .resolved {
-  padding: 0px 5px;
+  padding: 10px 5px;
   border-radius: 10px;
   position: relative;
-  left: 510px;
-  border: 0px;
+  left: 91%;
+  bottom: 21px;
+  border: 2px solid white;
   cursor: pointer;
   font-size: 15px;
   font-weight: 700;
