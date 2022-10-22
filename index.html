@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery1.js"></script>
+    <script src="jqscript.js"></script>
     <script src="https://kit.fontawesome.com/c3ac8b27fd.js" crossorigin="anonymous"></script>
     <title>QueryResolver</title>
 </head>
@@ -50,19 +52,28 @@
             </div>
             <div class="addPopup">
                 <div class="AddQueryBox">
-                    <div> <label for="Name">Name : </label><input type="text" name="" placeholder="Your Name">
-                        <label for="Name">Registration : </label><input type="text" name="" placeholder="12007895">
+                    <div> <label for="Name">Name : </label><input type="text" class="nameVal" name=""
+                            placeholder="Your Name">
+                        <label for="Name">Registration : </label><input type="text" class="regVal" name=""
+                            placeholder="12007895">
                     </div>
                     <br>
-                    <div><textarea rows="4" cols="60" name="comment" form="usrform"
+                    <div><textarea rows="4" cols="60" name="comment" form="usrform" class="txtArVal"
                             placeholder="Enter your Description here"></textarea>
                     </div>
                     <br>
                     <span>
-                        <label for="Name">Tags : </label><input placeholder="Related Topics" type="text" name="" id="">
+                        <label for="Name">Tags : </label><input placeholder="Related Topics" class="tags" type="text"
+                            name="" id="">
                     </span>
+                    <br><br>
                     <br>
-                    <button class="btn">Submit</button>
+                    <div class="lowerBtn">
+                        <button class="btn">Submit</button>
+                        <p class="outerOTP">OTP :
+                        <p class="OTP">1223</p>
+                        </p>
+                    </div>
                     <button class="closeButton">X</button>
                 </div>
             </div>
@@ -82,6 +93,7 @@
                     <p>Front-End</p>
                     <p>Android</p>
                     <p>Placements</p>
+                    <button class="resolved">Resolved</button>
                 </div>
             </div>
 
@@ -95,6 +107,7 @@
     <div class="footer">
     </div>
     <script src="script.js"></script>
+    <script src="resolveQueryTab.js"></script>
 </body>
 
 </html>

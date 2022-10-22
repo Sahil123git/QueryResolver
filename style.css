@@ -132,9 +132,9 @@ body {
   padding: 10px;
 }
 .content .middlecol .createButton .create:hover {
-  /* background-color: rgb(68, 174, 84); */
   color: rgb(222, 238, 222);
   background-color: rgb(24, 164, 59);
+  transition: 0.5s ease;
 }
 .content .middlecol .addPopup {
   /*remove this using Js to show input box*/
@@ -162,13 +162,54 @@ body {
   font-size: 17px;
   font-weight: 600;
 }
-.AddQueryBox .btn {
-  padding: 10px;
+.AddQueryBox .lowerBtn {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.AddQueryBox .lowerBtn .btn {
+  padding: 1px 8px;
   border-radius: 10px;
   border: 0px;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+.AddQueryBox .lowerBtn .btn:hover {
+  background-color: rgb(29, 181, 29);
+  color: white;
+  transition: 0.5s ease;
+}
+.AddQueryBox .lowerBtn .outerOTP {
+  margin-left: 78%;
+  color: rgb(112, 216, 225);
+  /* background-color: white; */
+}
+.AddQueryBox .lowerBtn .OTP {
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+}
+.AddQueryBox .closeButton {
+  position: absolute;
+  right: 210px;
+  top: 208px;
+  font-size: 17px;
+  font-weight: 600;
+  border: 0px;
+  border-radius: 10px;
+  padding: 7px 10px;
+  cursor: pointer;
+  color: rgb(203, 33, 33);
+  background-color: white;
+}
+.AddQueryBox .closeButton:hover {
+  color: white;
+  background-color: rgb(225, 30, 30);
+  transition: 0.4s ease;
 }
 .content .middlecol .popupButton {
+  /*to make popup which is having background black and will cover whole page*/
   /*this class will be added using js*/
   position: fixed;
   top: 0;
@@ -180,6 +221,7 @@ body {
 }
 
 .content .middlecol .query {
+  /*now to make popup */
   background-color: rgb(163, 174, 193);
   width: 65vw;
   height: 170px;
@@ -211,6 +253,19 @@ body {
 }
 .content .middlecol .query .tags {
   display: flex;
+}
+.content .middlecol .query .resolved {
+  padding: 0px 5px;
+  border-radius: 10px;
+  position: relative;
+  left: 510px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  /* box-shadow: rgb(9, 204, 226); */
+  background-color: rgb(24, 179, 24);
+  color: white;
 }
 .content .middlecol .query .tags p {
   border: 2px solid rgb(228, 198, 171);

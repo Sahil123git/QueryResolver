@@ -4,7 +4,7 @@ ele.addEventListener("click", myFunction);
 function myFunction() {
   let eleInner = document.querySelector(".addPopup");
   const para = document.querySelector(".closeButton");
-  
+
   eleInner.setAttribute("class", "popupButton");
   para.addEventListener("click", closePopup);
   eleInner.classList.remove("addPopup");
@@ -19,3 +19,4 @@ function myFunction() {
     eleInner.classList.remove("popupButton");
   }
 }
+
