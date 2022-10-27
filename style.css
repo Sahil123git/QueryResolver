@@ -9,7 +9,9 @@
 body {
   background-color: rgb(34, 11, 52);
 }
-
+textarea {
+  resize: none;
+}
 .navBar {
   display: flex;
   align-items: center;
@@ -117,11 +119,12 @@ body {
 }
 .content .middlecol .createButton {
   display: flex;
-  justify-content: space-between;
   margin-top: 10px;
 }
 
 .content .middlecol .createButton .create {
+  position: relative;
+  left: 46vw; /*decrease thsi acc to media query*/
   font-size: 15px;
   font-weight: 600;
   margin-right: 30px;
@@ -167,7 +170,7 @@ body {
   /* justify-content: space-between; */
 }
 .AddQueryBox .lowerBtn .btn {
-  padding: 1px 8px;
+  padding: 10px 8px;
   border-radius: 10px;
   border: 0px;
   cursor: pointer;
@@ -278,4 +281,9 @@ body {
 .content .middlecol .query .Description,
 .content .middlecol .query p {
   margin-top: 8px;
+}
+
+/* for resolved pop up */
+.hide {
+  display: none;
 }

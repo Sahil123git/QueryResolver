@@ -1,17 +1,10 @@
-let ranNum;
+let ranNum = 1234; //initial val of random num
 let ranEle = document.querySelector(".btn"); //on click of submit button
 let createBtn = document.querySelector(".create");
 let valEle = document.querySelector(".OTP");
 let eleInner = document.querySelector(".addPopup");
 
 ranEle.disabled = true; //to disable submit button
-ranEle.addEventListener("click", valFndr);
-
-function valFndr() {
-  ranNum = valEle.innerHTML;
-  console.log(ranNum);
-  // console.log("here");
-}
 
 let nameVal, regNo, desc;
 let tags = []; //creating arr for tags
@@ -115,7 +108,13 @@ function extractDet() {
   outerDiv.appendChild(tagsDiv);
   outerDiv.appendChild(resBtn);
 
-  let midCol = document.querySelector(".middlecol");
+  ranNum = valEle.innerHTML;
+  let classRandomEle = "a" + ranNum;
+  outerDiv.classList.add(classRandomEle);
+  console.log(classRandomEle + "  ele ");
+  // console.logt
+
+  let midCol = document.querySelector(".querypar");
   midCol.appendChild(outerDiv);
 
   console.log(midCol);
@@ -126,7 +125,7 @@ function extractDet() {
   ); /*it is adding addPopup class which was previously removed*/
   eleInner.classList.remove("popupButton");
   ranEle.disabled = true; //again disabling submit button
-  document.querySelector(".nameVal").value = ""; //Resetng all values 
+  document.querySelector(".nameVal").value = ""; //Resetng all values
   document.querySelector(".regVal").value = "";
   document.querySelector(".txtArVal").value = "";
   document.querySelector(".tags").value = [];
@@ -149,10 +148,56 @@ function chkEnteredVal() {
       desc.length > 8 &&
       arr.length > 5
     ) {
-      ranEle.disabled = false;
+      ranEle.disabled = false; //if condn true then submit button will get enabled
     }
   }
   if (ranEle.disable == false) {
     clearInterval(myInterval);
+  }
+}
+
+//adding resolved popup
+let res = document.querySelector(".resolved");
+let addPopup = document.querySelector(".addPop2");
+let midCol = document.querySelector(".querypar");
+let close = document.querySelector(".closeX");
+let btnotp = document.querySelector(".btnOTP");
+let removeEle = document.querySelector(".query");
+
+midCol.addEventListener("click", addClassForPopUp);
+
+let parentNode;
+function addClassForPopUp() {
+  let clickedEle = event.target; //returning clicked ele
+  parentNode = clickedEle.parentNode; //getting parent node of submit button
+  // console.log(clickedEle.tagName);
+
+  if (clickedEle.tagName === "BUTTON") {
+    //if button is clicked then only show popup
+    console.log(parentNode);
+    addPopup.classList.add("popupButton");
+    addPopup.classList.remove("hide");
+    close.addEventListener("click", closePopUp);
+    btnotp.addEventListener("click", chkOTP);
+  }
+}
+function closePopUp() {
+  //for closing popup
+  // console.log("her12");
+  addPopup.classList.add("hide");
+  addPopup.classList.remove("popupButton");
+}
+function chkOTP() {
+  //for verifying otp
+  console.log(parentNode);
+  console.log(document.querySelector(".recOTP").value);
+
+  if (
+    parentNode.classList.contains("a" + document.querySelector(".recOTP").value)
+  ) {
+    addPopup.classList.add("hide");
+    addPopup.classList.remove("popupButton");
+    document.querySelector(".recOTP").value = "";
+    parentNode.remove();
   }
 }
