@@ -3,6 +3,7 @@ let ranEle = document.querySelector(".btn"); //on click of submit button
 let createBtn = document.querySelector(".create");
 let valEle = document.querySelector(".OTP");
 let eleInner = document.querySelector(".addPopup");
+let ratingVal = document.querySelector(".ratingVal").innerHTML;
 
 ranEle.disabled = true; //to disable submit button
 
@@ -111,9 +112,10 @@ function extractDet() {
   ranNum = valEle.innerHTML;
   let classRandomEle = "a" + ranNum;
   outerDiv.classList.add(classRandomEle);
-  console.log(classRandomEle + "  ele ");
+  // console.log(classRandomEle + "  ele ");
   // console.logt
-
+  ratingVal = Number(ratingVal) - 100;
+  document.querySelector(".ratingVal").innerHTML = ratingVal;
   let midCol = document.querySelector(".querypar");
   midCol.appendChild(outerDiv);
 
@@ -199,5 +201,8 @@ function chkOTP() {
     addPopup.classList.remove("popupButton");
     document.querySelector(".recOTP").value = "";
     parentNode.remove();
+    // console.log(ratingVal);
+    ratingVal = Number(ratingVal) + 200;
+    document.querySelector(".ratingVal").innerHTML = ratingVal;
   }
 }

@@ -287,3 +287,48 @@ textarea {
 .hide {
   display: none;
 }
+
+/*fixing lst col*/
+.content .colEnd {
+  border: 2px solid rgb(236, 139, 222);
+  position: fixed;
+  left: 85vw;
+  height: 80%;
+  width: 260px;
+  background-color: #b7cadf;
+}
+.colEnd .nav {
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.colEnd .rating p {
+  color: rgb(11, 32, 168);
+  padding: 15px 15px 8px 15px;
+}
+.colEnd .rating {
+  background-color: rgb(151, 184, 215);
+}
+.colEnd .rating p {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+.colEnd .lower li {
+  color: rgb(11, 32, 168);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 5px 1px 22px;
+  list-style-type: none;
+}
+
+.colEnd .lower li::before {
+  display: inline-block;
+  content: "";
+  border-radius: 10px;
+  height: 0.6rem;
+  width: 0.65rem;
+  margin-right: 0.5rem;
+  background-color: rgb(55, 129, 151);
+}
