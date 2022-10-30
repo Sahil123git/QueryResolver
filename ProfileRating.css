@@ -1,0 +1,39 @@
+.middlecol .RatingAnalysis {
+  background-color: rgb(163, 174, 193);
+  width: 65vw;
+  height: 185px;
+  border: 3px solid blue;
+  margin: 10px 15px 20px 2px;
+  border-radius: 20px;
+  display: flex;
+}
+.middlecol .RatingAnalysis .lftCol,
+.middlecol .RatingAnalysis .rightCol {
+  width: 40vw;
+}
+.middlecol .RatingAnalysis .box1,
+.middlecol .RatingAnalysis .box2,
+.middlecol .RatingAnalysis .rightCol {
+  display: flex;
+}
+
+.box1,
+.box2 {
+  padding: 15px;
+  margin: 15px;
+  /* border: 2px solid red; */
+}
+.content .middlecol .line {
+  color: yellow;
+  border-left: 6px solid blue;
+  height: 22vh;
+}
+.content .middlecol p {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(50, 109, 160);
+}
+.middlecol .RatingAnalysis .rightCol {
+  align-items: center;
+  justify-content: center;
+}
