@@ -52,7 +52,7 @@ textarea {
 .navBar .Profile img {
   border: 3px dotted rgb(13, 79, 154);
   position: relative;
-  margin-left: 19vw;
+  margin-left: 65vw;
 }
 .content {
   display: flex;
@@ -113,7 +113,7 @@ textarea {
   margin-left: 225px;
 }
 .content .middlecol p {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
   color: rgb(50, 109, 160);
 }
@@ -239,7 +239,7 @@ textarea {
 .content .middlecol .query .Ques {
   /* margin-top: 5px; */
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
 }
 .content .middlecol .query .Ans {
@@ -263,7 +263,7 @@ textarea {
   border-radius: 10px;
   position: relative;
   left: 91%;
-  bottom: 21px;
+  bottom: 20%;
   border: 2px solid white;
   cursor: pointer;
   font-size: 15px;

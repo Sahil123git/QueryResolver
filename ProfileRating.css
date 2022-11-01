@@ -24,16 +24,79 @@
   /* border: 2px solid red; */
 }
 .content .middlecol .line {
-  color: yellow;
+  /* color: yellow; */
   border-left: 6px solid blue;
-  height: 22vh;
+  height: 24vh;
 }
 .content .middlecol p {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   color: rgb(50, 109, 160);
 }
 .middlecol .RatingAnalysis .rightCol {
   align-items: center;
   justify-content: center;
+}
+.content .middlecol .RatingAnalysis p {
+  color: rgb(11, 32, 168);
+}
+.middlecol .Ranking {
+  background-color: rgb(163, 174, 193);
+  width: 65vw;
+  height: 226px;
+  border: 3px solid blue;
+  margin: 10px 15px 20px 2px;
+  border-radius: 10px;
+  /* display: flex; */
+}
+.middlecol .incHeight {
+  /*to increase height of table*/
+  height: 826px;
+}
+.middlecol .toggleHide {
+  /*this will hide extra rows*/
+  display: none;
+}
+.middlecol .table {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(50, 109, 160);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.middlecol .table th {
+  text-align: center;
+  color: rgb(55, 129, 151);
+  padding: 10px 15px;
+  height: 70px;
+}
+.middlecol .table td {
+  color: rgb(11, 32, 168);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 10px;
+  border-radius: 8px;
+  height: 50px;
+}
+.middlecol .table .center {
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: rgb(180, 188, 206);
+}
+
+.middlecol .btnTable {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 10px;
+  margin: 5px 1px;
+  color: rgb(29, 181, 29);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.middlecol .btnTable:hover {
+  background-color: rgb(29, 181, 29);
+  color: white;
+  transition: 0.5s ease;
 }

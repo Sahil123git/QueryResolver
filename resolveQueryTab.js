@@ -179,7 +179,7 @@ function addClassForPopUp() {
     console.log(parentNode);
     addPopup.classList.add("popupButton");
     addPopup.classList.remove("hide");
-    close.addEventListener("click", closePopUp);
+    close.addEventListener("click", closePopUp); //two options to close popup
     btnotp.addEventListener("click", chkOTP);
   }
 }
