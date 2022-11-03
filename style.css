@@ -124,7 +124,7 @@ textarea {
 
 .content .middlecol .createButton .create {
   position: relative;
-  left: 46vw; /*decrease thsi acc to media query*/
+  left: 45vw; /*decrease thsi acc to media query*/
   font-size: 15px;
   font-weight: 600;
   margin-right: 30px;
@@ -249,7 +249,7 @@ textarea {
   color: rgb(142, 88, 192);
 }
 .content .middlecol .query .scndTag {
-  margin-left: 45%;
+  margin-left: 34%;
 }
 
 .content .middlecol .query .Description {
@@ -292,7 +292,8 @@ textarea {
 .content .colEnd {
   border: 2px solid rgb(236, 139, 222);
   position: fixed;
-  left: 85vw;
+  /* left: 85vw; */
+  right: 0px;
   height: 80%;
   width: 260px;
   background-color: #b7cadf;
@@ -331,4 +332,110 @@ textarea {
   width: 0.65rem;
   margin-right: 0.5rem;
   background-color: rgb(55, 129, 151);
+}
+
+/*Media Query*/
+/*Large-Medium Devices*/
+@media (max-width: 1456px) {
+  /*when screen width <= 1450 this will get applied*/
+  .navBar .Profile {
+    left: 12vw;
+  }
+  .content .middlecol .query {
+    /*now to make popup */
+    width: 62vw;
+    height: 185px;
+  }
+  .content .middlecol .createButton .create {
+    left: 41vw; /*decrease thsi acc to media query*/
+  }
+  .content .middlecol .query .resolved {
+    left: 88%;
+    bottom: 23%;
+  }
+  .content .middlecol .query .scndTag {
+    margin-left: 33%;
+  }
+}
+
+/*mediun Medium Devices*/
+@media (max-width: 1332px) {
+  .navBar .Profile {
+    left: 11vw;
+  }
+  .content .middlecol .query {
+    /*now to make popup */
+    width: 60vw;
+    height: 185px;
+  }
+  .content .middlecol .createButton .create {
+    left: 37vw; /*decrease thsi acc to media query*/
+  }
+
+  .content .middlecol .query .scndTag {
+    margin-left: 28%;
+  }
+  .content .colEnd {
+    width: 220px;
+  }
+}
+
+/*small Medium Devices*/
+@media (max-width: 1225px) {
+  .navBar .Profile {
+    left: 9vw;
+  }
+  .content .middlecol .query {
+    /*now to make popup */
+    width: 56vw;
+    height: 185px;
+  }
+  .content .middlecol .createButton .create {
+    left: 30vw; /*decrease thsi acc to media query*/
+  }
+  .content .middlecol .query .resolved {
+    left: 86%;
+    bottom: 23%;
+  }
+  .content .middlecol .query .scndTag {
+    margin-left: 21%;
+  }
+}
+
+/* Media query for making query fixed for small devices */
+@media (max-width: 1130px) {
+  .navBar .Profile {
+    left: 4vw;
+  }
+  .content .middlecol .query p,
+  .content .middlecol .query .Ques {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .content .middlecol .query .Ans {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .content .middlecol .query {
+    width: 50vw;
+    height: 250px;
+  }
+  .content .middlecol .query .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content .middlecol .query .header .Ans {
+    margin-left: 22px;
+  }
+  .content .middlecol .createButton .create {
+    left: 19vw;
+  }
+  .content .middlecol .query .resolved {
+    left: 82%;
+    bottom: 17%;
+  }
+  .content .middlecol .query .scndTag {
+    margin-left: 3%;
+  }
 }
