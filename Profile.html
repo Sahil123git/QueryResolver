@@ -53,26 +53,52 @@
                 <!-- <p>Recent Queries</p> -->
                 <!-- <button class="create">Create</button> -->
             </div>
-            <div class="RatingAnalysis">
+            <div class="RatingAnalysis nowHideMe">
                 <div class="lftCol">
                     <div class="box1">
                         <p>Queries Resolved : </p>
-                        <p>100</p>
+                        <p class="ans">100</p>
                     </div>
                     <div class="box2">
                         <p>Queries Asked : </p>
-                        <p>90</p>
+                        <p class="ans"> 90</p>
                     </div>
                 </div>
                 <div class="line"></div>
                 <div class="rightCol">
                     <p>You are in Top :</p>
-                    <p>10%</p>
+                    <p class="ans">10%</p>
                 </div>
             </div>
+            <div class="RatingAnalysis hideMe">
+                <div class="lftCol">
+                    <div class="box1">
+                        <p>Queries Resolved : </p>
+                        <p class="ans">100</p>
+                    </div>
+                    <div class="box2">
+                        <p>Queries Asked : </p>
+                        <p class="ans">90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="RatingAnalysis hideMe">
+                <div class="lftCol">
+                    <div class="box1">
+                        <p>You are in Top :</p>
+                        <p class="ans">10%</p>
+                    </div>
+                    <div class="box2">
+                        <p>Your Rating : </p>
+                        <p class="ans">201</p>
+                    </div>
+                </div>
+            </div>
+
+
             <div>
                 <p>Players Ranking</p>
-                <div class="Ranking">
+                <div class="Ranking" style="overflow-x:auto;">
                     <table class="table ">
                         <!--add incHeight class -->
                         <tr>
@@ -204,8 +230,8 @@
                             <td class="center">4th</td>
                         </tr>
                     </table>
-                    <button class="btnTable">Detail Analysis</button>
                 </div>
+                <button class="btnTable">Detail Analysis</button>
             </div>
         </div>
         <!--lst column-->

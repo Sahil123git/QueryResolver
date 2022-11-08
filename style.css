@@ -22,6 +22,7 @@ textarea {
   position: sticky;
   top: 0;
   left: 0;
+  height: 70px;
 }
 
 .navBar a {
@@ -51,8 +52,10 @@ textarea {
 
 .navBar .Profile img {
   border: 3px dotted rgb(13, 79, 154);
-  position: relative;
-  margin-left: 65vw;
+  position: absolute;
+  /* margin-left: 65vw; */
+  bottom: -20px;
+  right: -65vw;
 }
 .content {
   display: flex;
@@ -356,6 +359,12 @@ textarea {
   .content .middlecol .query .scndTag {
     margin-left: 33%;
   }
+  .AddQueryBox .lowerBtn .outerOTP {
+    margin-left: 65%;
+  }
+  .middlecol .txtArVal {
+    width: 50vw;
+  }
 }
 
 /*mediun Medium Devices*/
@@ -377,6 +386,12 @@ textarea {
   }
   .content .colEnd {
     width: 220px;
+  }
+  .AddQueryBox .lowerBtn .outerOTP {
+    margin-left: 55%;
+  }
+  .middlecol .txtArVal {
+    width: 50vw;
   }
 }
 
@@ -405,7 +420,7 @@ textarea {
 /* Media query for making query fixed for small devices */
 @media (max-width: 1130px) {
   .navBar .Profile {
-    left: 4vw;
+    left: 3vw;
   }
   .content .middlecol .query p,
   .content .middlecol .query .Ques {
@@ -437,5 +452,151 @@ textarea {
   }
   .content .middlecol .query .scndTag {
     margin-left: 3%;
+  }
+}
+
+@media (max-width: 930px) {
+  .content .colEnd {
+    display: none;
+  }
+  .content .middlecol .query .resolved {
+    font-size: 11px;
+    font-weight: 600;
+    left: 70%;
+    bottom: 17%;
+  }
+  .content .middlecol .query p,
+  .content .middlecol .query .Ques {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .content .middlecol .query .Ans {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .content .middlecol .query {
+    width: 55vw;
+    height: 300px;
+  }
+  .navBar .Profile {
+    position: relative;
+    left: -50px;
+    /* right: 100vw; */
+  }
+  .content .fstcol {
+    position: fixed;
+    height: 80%;
+    width: 180px;
+    background-color: #b7cadf;
+  }
+  .fstcol {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .content .middlecol .createButton .create {
+    font-size: 12px;
+    font-weight: 600;
+    left: 20%;
+  }
+  .content .middlecol .query .tags {
+    /* display: flex; */
+    flex-direction: column;
+    width: 110px;
+  }
+  .AddQueryBox .lowerBtn .outerOTP {
+    margin-left: 40%;
+  }
+  .middlecol .txtArVal {
+    width: 50vw;
+  }
+}
+@media (max-width: 760px) {
+  .AddQueryBox .lowerBtn .outerOTP {
+    margin-left: 10%;
+  }
+  .middlecol .txtArVal {
+    width: 40vw;
+  }
+}
+@media (max-width: 630px) {
+  .content .middlecol p {
+    font-size: 22px;
+    /* padding-top: 2px; */
+    font-weight: 600;
+  }
+
+  .content .middlecol {
+    margin-left: 160px;
+  }
+
+  .fstcol .nav {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .fstcol .lower li {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .fstcol .chngSize {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .content .middlecol .query {
+    width: 55vw;
+    height: 320px;
+  }
+  .content .middlecol .query .Description {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .middlecol .query .resolved {
+    font-size: 11px;
+    font-weight: 600;
+    left: 65%;
+    bottom: 17%;
+  }
+  .content .fstcol {
+    border: 2px solid rgb(236, 139, 222);
+    position: fixed;
+    height: 80%;
+    width: 150px;
+    background-color: #b7cadf;
+  }
+  .navBar .Profile {
+    left: -35vw;
+  }
+  .content .middlecol .createButton .create {
+    left: 10%;
+  }
+  .content .middlecol p {
+    font-size: 20px;
+    /* padding-bottom: 19px; */
+  }
+  .middlecol label,
+  .middlecol .outerOTP {
+    font-size: 0px;
+  }
+  .middlecol .nameVal,
+  .middlecol .regVal,
+  .middlecol .txtArVal,
+  .middlecol .tags,
+  .middlecol .recOTP,
+  .middlecol label {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .AddQueryBox {
+    margin: 115px;
+    padding: 25px;
+  }
+  .AddQueryBox .closeButton {
+    position: absolute;
+    right: 131px;
+    top: 122px;
+  }
+  .AddQueryBox .lowerBtn {
+    display: flex; /* justify-content: space-between; */
+    flex-direction: column;
   }
 }

@@ -16,7 +16,9 @@
 .middlecol .RatingAnalysis .rightCol {
   display: flex;
 }
-
+.middlecol .hideMe {
+  display: none;
+}
 .box1,
 .box2 {
   padding: 15px;
@@ -25,8 +27,8 @@
 }
 .content .middlecol .line {
   /* color: yellow; */
-  border-left: 6px solid blue;
-  height: 24vh;
+  /* border-left: 6px solid blue; */
+  height: 26vh;
 }
 .content .middlecol p {
   font-size: 26px;
@@ -37,8 +39,9 @@
   align-items: center;
   justify-content: center;
 }
-.content .middlecol .RatingAnalysis p {
-  color: rgb(11, 32, 168);
+
+.middlecol p.ans {
+  color: rgb(142, 88, 192);
 }
 .middlecol .Ranking {
   background-color: rgb(163, 174, 193);
@@ -53,6 +56,7 @@
   /*to increase height of table*/
   height: 826px;
 }
+
 .middlecol .toggleHide {
   /*this will hide extra rows*/
   display: none;
@@ -99,4 +103,51 @@ tr:nth-child(even) {
   background-color: rgb(29, 181, 29);
   color: white;
   transition: 0.5s ease;
+}
+@media (max-width: 1450px) {
+  .middlecol .nowHideMe {
+    display: none;
+  }
+  .middlecol .hideMe {
+    display: block;
+  }
+}
+@media (max-width: 1450px) {
+  .content .colEnd {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .middlecol .hideMe {
+    height: 200px;
+    width: 80%;
+  }
+  .middlecol .Ranking {
+    width: 60vw;
+    height: 226px;
+  }
+}
+
+@media (max-width: 700px) {
+  .content .middlecol p {
+    font-size: 20px;
+  }
+  .middlecol .Ranking {
+    width: 55vw;
+    height: 226px;
+  }
+  .middlecol .table td,
+  .middlecol .table th {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content .middlecol p {
+    font-size: 15px;
+  }
+  .middlecol .hideMe {
+    height: 170px;
+    width: 80%;
+  }
 }
