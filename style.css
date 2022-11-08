@@ -518,6 +518,7 @@ textarea {
     width: 40vw;
   }
 }
+/*for Mobile Phones*/
 @media (max-width: 630px) {
   .content .middlecol p {
     font-size: 22px;
@@ -598,5 +599,16 @@ textarea {
   .AddQueryBox .lowerBtn {
     display: flex; /* justify-content: space-between; */
     flex-direction: column;
+  }
+}
+/*for small Mobile Phones*/
+@media (max-width: 390px) {
+  .content .middlecol .createButton .create {
+    left: 0%;
+    /* display: none; */
+  }
+  .content .middlecol .query {
+    width: 50vw;
+    height: 320px;
   }
 }
