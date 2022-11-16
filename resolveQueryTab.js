@@ -18,7 +18,7 @@ function extractDet() {
   regNo = document.querySelector(".regVal").value;
   desc = document.querySelector(".txtArVal").value;
 
-  let arr = document.querySelector(".tags").value;
+  let arr = document.querySelector(".tags").value; //val entered by user
   let j = 0;
 
   tags[0] = ""; //to create arr of tags
