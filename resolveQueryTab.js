@@ -21,7 +21,7 @@ function extractDet() {
   let arr = document.querySelector(".tags").value;
   let j = 0;
 
-  tags[0] = "";
+  tags[0] = ""; //to create arr of tags
 
   for (let i = 0; i < arr.length; i++) {
     //to get every tag from identifying space
@@ -91,6 +91,7 @@ function extractDet() {
     let tagsp1 = document.createElement("p");
     tagsp1.innerText = tags[i];
     tagsDiv.appendChild(tagsp1);
+    //now entering tags in website
   }
 
   tagsDiv.setAttribute("class", "tags");
